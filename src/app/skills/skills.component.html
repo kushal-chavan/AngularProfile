@@ -1,0 +1,216 @@
+<section class="section" id="skills">
+    <div class="section-wrapper container">
+      <div class="section-content">
+        <div class="row">
+          <div class="text-center col-md-8 col-md-offset-2">
+            <h2 class="section-title">{this.props.title.title}</h2>
+            <p class="section-subtitle">
+            {this.props.title.tagline}
+            </p>
+            <span class="divider center"></span>
+          </div>
+        </div>
+        <div class="circle-chart">
+          <div class="row">
+            <div class="col-sm-4 col-md-2">
+                <div class="item">
+                  <div class="circle">
+                    <span
+                      class="item-progress"
+                      data-percent={item.percent}
+                    ></span>
+                  </div>
+                  <span class="percent">{item.percent}%</span>
+                  <h4 class="text-center">{item.skill}</h4>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="knowledge">
+    <div class="section-wrapper container">
+      <div class="section-content">
+        <div class="row">
+          <div class="text-center col-md-8 col-md-offset-2">
+            <h2 class="section-title">{this.props.title.knowledge.title}</h2>
+            <p class="section-subtitle">
+            {this.props.title.knowledge.tagline}
+            </p>
+            <span class="divider center"></span>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-6">
+                <div class="bar-chart">
+                  <div class="item">
+                    <h4>{item.title}</h4>
+                    <div class="bar">
+                      <span class="percent">{item.percent}%</span>{" "}
+                      <span
+                        class="item-progress"
+                        data-percent={item.percent}
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="accolades">
+    <div class="section-wrapper container">
+      <div class="section-content">
+        <div class="row">
+          <div class="text-center col-md-8 col-md-offset-2">
+            <h2 class="section-title">{this.props.title.accolades.title}</h2>
+            <p class="section-subtitle">
+            {this.props.title.accolades.tagline}
+            </p>
+            <span class="divider center"></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <div class="accolades">
+                <div class="item">
+                    <i class={"icon-" + item.icon}></i>
+                    <div class="content">
+                      <h3>{item.title}</h3>
+                      <p class="text-grey">{item.body}</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="text-grey bookmark text-center">
+              <i class="icon-Bookmark"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section bg-image-yes" id="milestones">
+    <div class="section-wrapper container-fluid">
+      <div class="section-content">
+        <div class="row">
+          <div class="text-center col-md-8 col-md-offset-2">
+            <h2 class="section-title"> {this.props.title.milestones.title}</h2>
+            <p class="section-subtitle">
+            {this.props.title.milestones.tagline}
+            </p>
+            <span class="divider center"></span>
+          </div>
+        </div>
+        <div class="milestones">
+          <div class="row">
+            <div class="item col-md-3 col-sm-6">
+                <div class="circle">
+                  <i class={"icon-" + item.icon}></i>
+                </div>
+                <span
+                  class="number"
+                  data-from={item.count_from}
+                  data-refresh-interval={item.interval}
+                  data-to={item.count_to}
+                >
+                  {item.static_count}
+                </span>
+                <h4>{item.title}</h4>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="work-process">
+    <div class="section-wrapper container">
+      <div class="section-content">
+        <div class="row">
+          <div class="text-center col-md-12">
+            <h2 class="section-title">Work Process</h2>
+            <p class="section-subtitle">
+              I put my heart and my soul into my work, and have lost my
+              mind in the process - Vincent Van Gogh
+            </p>
+            <span class="divider center"></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <p class="text-grey text-justify">
+              With over 8 years of extensive experience and expertise
+              across different domains with a variety of clients, I have
+              the competence to understand the clients business needs and
+              provide the client with cutting-edge software and mobile
+              applications.
+            </p>
+          </div>
+        </div>
+        <div class="work-process">
+          <div class="row">
+            <div class="item col-md-2 col-sm-2 no-margin first">
+              <div class="inner-content">
+                <i class="icon-Files"></i>{" "}
+                <span class="title">1. Requirements</span>{" "}
+                <span class="dot"></span>
+              </div>
+              <i class="icon-Arrow icon-Down-3"></i>
+            </div>
+            <div class="item col-md-2 col-sm-2">
+              <div class="inner-content">
+                <i class="icon-Pencil"></i>{" "}
+                <span class="title">2. Design</span>
+              </div>
+              <i class="icon-Arrow icon-Up-3"></i>
+            </div>
+            <div class="item col-md-2 col-sm-2 no-margin">
+              <div class="inner-content">
+                <i class="icon-Coding"></i>{" "}
+                <span class="title">3. Implement</span>
+              </div>
+              <i class="icon-Arrow icon-Down-3"></i>
+            </div>
+            <div class="item col-md-2 col-sm-2">
+              <div class="inner-content">
+                <i class="icon-Bug"></i>{" "}
+                <span class="title">4. Test</span>
+              </div>
+              <i class="icon-Arrow icon-Up-3"></i>
+            </div>
+            <div class="item col-md-2 col-sm-2 no-margin">
+              <div class="inner-content">
+                <i class="icon-Rocket"></i>{" "}
+                <span class="title">5. Deliver</span>
+              </div>
+              <i class="icon-Arrow icon-Down-3"></i>
+            </div>
+            <div class="item col-md-2 col-sm-2 last">
+              <div class="inner-content">
+                <i class="icon-Monitor-2"></i>{" "}
+                <span class="title">6. Support</span>{" "}
+                <span class="dot"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <p class="text-grey text-justify">
+              I intend to reduce the risks and time associated with the
+              application development and so I follow industry standard
+              SDLC (Software Developement Life Cycle) process. I generally
+              follow spiral iterative methodology to build software
+              applications in the shortest possible time and with zero
+              risk. I start the project by gathering business and
+              technical requirements, designing, development, integration
+              & testing, deployment & acceptance and finally maintaining
+              the product.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

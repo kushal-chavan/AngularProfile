@@ -1,0 +1,65 @@
+<section class="section bg-image-yes" id="clients">
+    <div class="section-wrapper container-fluid">
+      <div class="section-content">
+        <div class="row">
+          <div class="text-center col-md-12">
+            <h2 class="section-title">{this.props.title.title}</h2>
+            <p class="section-subtitle">
+            {this.props.title.tagline}
+            </p>
+            <span class="divider center"></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <div class="clients flexslider">
+              <div class="slides">
+
+                <div class="item">
+                    <div class="animated" data-animation-effect="flipInX">
+                      <div class="hidden-xs profile">
+                        <img
+                          alt={item.title}
+                          class="img-responsive img-thumbnail"
+                          src={item.image}
+                        />
+                      </div>
+                      <div class="content">
+                        <h3>{item.title}</h3>
+                        <p class="detail">"{item.body}"</p>
+                        <p class="source">
+                          {item.position}
+                          <br />
+                          <span>{item.duration}</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                <div class="flexslider-controls">
+                  <ul class="flex-control-nav">
+
+                    <li><img alt="" class="img-responsive" src={item.image} /></li>
+
+                  </ul>
+                </div>
+                <ul class="hidden-xs flex-direction-nav-custom list-inline">
+                  <li>
+                    <a href="#0" class="flex-prev">
+                      <i class="icon-Left-3"></i>
+
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#0" class="flex-next">
+                      <i class="icon-Right-3"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

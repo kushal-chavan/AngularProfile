@@ -1,0 +1,91 @@
+<section class="section" id="resume">
+    <div class="section-wrapper container">
+      <div class="section-content">
+        <div class="row">
+          <div class="text-center col-md-8 col-md-offset-2">
+            <h2 class="section-title">{this.props.title.title}</h2>
+            <p class="section-subtitle">
+            {this.props.title.tagline}
+            </p>
+            <span class="divider center"></span>
+          </div>
+        </div>
+        <div class="row education">
+          <div class="col-md-10 col-md-offset-1">
+            <h3>
+              My Education
+              <br />
+              1989 - 2009
+            </h3>
+            <p class="text-center">
+              Thanks to my parents for helping and supporting me for what
+              I am today.
+            </p>
+            <div class="panel-group resume" id="education">
+                <div class="resume-item">
+                    <div class="resume-year">
+                      <span class="resume-year">{item.duration}</span>
+                    </div>
+                    <div class="resume-btn">
+                      <a
+                        href={'#education' + item.id}
+                        data-parent="#education"
+                        data-toggle="collapse"
+                        class={'collapsed'}
+                      >
+                        {null}
+                      </a>
+                    </div>
+                    <div class="panel">
+                      <div class="panel-heading">
+                        <div class="panel-title">
+                          <h4 class="resume-title">{item.title}</h4>
+                          <br />
+                          <h6 class="college-title">- {item.tagline}</h6>
+                        </div>
+                      </div>
+                      <div class="collapse panel-collapse in" id={'education' + item.id}>
+                        <div class="text-grey panel-body">
+                          <p>{item.body}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        {/* Work Experience */}
+        <div class="row work-experience">
+          <div class="col-md-10 col-md-offset-1">
+            <h3>
+              Work Experience
+              <br />
+              2008 - Till Present
+            </h3>
+            <div class="panel-group resume" id="work">
+                <div class="resume-item">
+                    <div class="resume-year">
+                      <span class="resume-year">{item.year}</span>
+                    </div>
+                    <div class="resume-btn">
+                      <a href={'#work'+item.id} data-parent="#work" data-toggle="collapse">
+                        {null}
+                      </a>
+                    </div>
+                    <div class="panel">
+                      <div class="panel-heading">
+                        <div class="panel-title">
+                          <h4 class="resume-title">{item.title}</h4>
+                          <br/>
+                          <span>{item.body}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        {/* Work Experience End*/}
+      </div>
+    </div>
+  </section>
